@@ -1,7 +1,7 @@
 [![](https://jitpack.io/v/jgabrielfreitas/DataControllerDemo.svg)](https://jitpack.io/#jgabrielfreitas/DataControllerDemo) [![](https://img.shields.io/badge/Language%20-Java-4682b4.svg)](https://jitpack.io/#jgabrielfreitas/DataControllerDemo)
 ![LayoutId](imgs/LayoutId-header.png)
 
-### How to
+## How to
 **Step 1.** Add the JitPack repository to your build file
 ```gradle
 allprojects {
