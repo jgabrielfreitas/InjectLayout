@@ -1,6 +1,38 @@
 [![](https://jitpack.io/v/jgabrielfreitas/DataControllerDemo.svg)](https://jitpack.io/#jgabrielfreitas/DataControllerDemo) [![](https://img.shields.io/badge/Language%20-Java-4682b4.svg)](https://jitpack.io/#jgabrielfreitas/DataControllerDemo)
 ![LayoutId](imgs/LayoutId-header.png)
 
+## Usage
+
+#### Using in an Activity
+
++ Extends `LayoutIdBaseActivity`
++ Call `@LayoutId` annotation and pass your Activity's layout
+
+``` java
+@LayoutId(layout = R.layout.activity_main)
+public class MainActivity extends LayoutIdBaseActivity {
+}
+```
+
+> That's it. Your Activity is working.
+
+
+#### Using in an Fragment
+
++ Extends `LayoutIdBaseFragment`
++ Call `@LayoutId` annotation and pass your Fragment's layout
+
+```java
+@LayoutId(layout = R.layout.fragment_hello_fragment)
+public class HelloFragment extends LayoutIdBaseFragment {
+}
+```
+> That's it. Your Fragment is working.
+
+
+
+---
+
 ### License
 ```
 The MIT License (MIT)
