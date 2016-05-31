@@ -1,13 +1,10 @@
 package com.jgabrielfreitas.layoutid.demo;
 
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
+import com.jgabrielfreitas.layoutid.annotations.LayoutId;
+import com.jgabrielfreitas.layoutid.activity.LayoutIdBaseActivity;
 
-public class MainActivity extends AppCompatActivity {
+@LayoutId(layout = R.layout.activity_main)
+public class MainActivity extends LayoutIdBaseActivity {
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-    }
+
 }
