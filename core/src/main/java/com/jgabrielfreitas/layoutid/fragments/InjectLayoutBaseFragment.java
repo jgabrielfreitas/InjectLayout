@@ -7,12 +7,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.jgabrielfreitas.layoutid.annotations.LayoutId;
+import com.jgabrielfreitas.layoutid.annotations.InjectLayout;
 
 /**
  * Created by JGabrielFreitas on 31/05/16.
  */
-public abstract class LayoutIdBaseFragment extends Fragment {
+public abstract class InjectLayoutBaseFragment extends Fragment {
 
     View view;
 
@@ -20,9 +20,9 @@ public abstract class LayoutIdBaseFragment extends Fragment {
 
         int layoutToInflate = 0;
 
-        if (getClass().getAnnotation(LayoutId.class) != null) {
-            if (getClass().getAnnotation(LayoutId.class).layout() != -1) {
-                layoutToInflate = getClass().getAnnotation(LayoutId.class).layout();
+        if (getClass().getAnnotation(InjectLayout.class) != null) {
+            if (getClass().getAnnotation(InjectLayout.class).layout() != -1) {
+                layoutToInflate = getClass().getAnnotation(InjectLayout.class).layout();
             }
         }
 

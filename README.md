@@ -1,5 +1,5 @@
 [![](https://jitpack.io/v/jgabrielfreitas/DataControllerDemo.svg)](https://jitpack.io/#jgabrielfreitas/DataControllerDemo) [![](https://img.shields.io/badge/Language%20-Java-4682b4.svg)](https://jitpack.io/#jgabrielfreitas/DataControllerDemo)
-![LayoutId](imgs/LayoutId-header.png)
+![InjectLayout](imgs/LayoutId-header.png)
 
 ## How to
 **Step 1.** Add the JitPack repository to your build file
@@ -15,7 +15,7 @@ allprojects {
 **Step 2.** Add the dependency
 ```gradle
 dependencies {
-		compile 'com.github.jgabrielfreitas:LayoutId:1.0.0'
+		compile 'com.github.jgabrielfreitas:InjectLayout:1.0.1'
 	}
 ```
 
@@ -23,12 +23,12 @@ dependencies {
 
 #### Using in an Activity
 
-+ Extends `LayoutIdBaseActivity`
-+ Call `@LayoutId` annotation and pass your Activity's layout
++ Extends `InjectLayoutBaseActivity`
++ Call `@InjectLayout` annotation and pass your Activity's layout
 
 ``` java
-@LayoutId(layout = R.layout.activity_main)
-public class MainActivity extends LayoutIdBaseActivity {
+@InjectLayout(layout = R.layout.activity_main)
+public class MainActivity extends InjectLayoutBaseActivity {
 
 }
 ```
@@ -38,12 +38,12 @@ public class MainActivity extends LayoutIdBaseActivity {
 
 #### Using in an Fragment
 
-+ Extends `LayoutIdBaseFragment`
-+ Call `@LayoutId` annotation and pass your Fragment's layout
++ Extends `InjectLayoutBaseFragment`
++ Call `@InjectLayout` annotation and pass your Fragment's layout
 
 ```java
-@LayoutId(layout = R.layout.fragment_hello_fragment)
-public class HelloFragment extends LayoutIdBaseFragment {
+@InjectLayout(layout = R.layout.fragment_hello_fragment)
+public class HelloFragment extends InjectLayoutBaseFragment {
 
 }
 ```
